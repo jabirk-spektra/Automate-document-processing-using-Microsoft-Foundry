@@ -24,7 +24,7 @@ In this task, you will open the Azure OpenAI resource in the Azure portal. It na
 
 1. In the Azure portal, search for **OpenAI (1)** in the search bar and select **Azure OpenAI (2)** from Services.
 
-   ![OpenAI]((images/t1s1.png)
+   ![OpenAI](images/t1s1.png)
 
 1. In the **Microsoft Foundry | Azure OpenAI** tab, select **OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
@@ -52,7 +52,7 @@ In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne
       
     - Click on **Turn on CORS (4)** when prompted.
 
-         ![]((images/t2s2a.png)
+         ![](images/t2s2a.png)
 
       > **Note:** If you encounter any issues while enabling CORS, please follow the steps below :
 
@@ -84,7 +84,7 @@ In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne
 
 1. Click on **Upload files** **(1)**, and then click **Next** **(2)**.
 
-   ![data-management]((images/t2s4a.png)
+   ![data-management](images/t2s4a.png)
 
 1. On the **Data Management** page, from the drop-down select **Keyword (1)** as the Search type and click **Next (2)**.
 
@@ -92,11 +92,11 @@ In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne
 
 1. On the **Data Connection** step, choose **API Key (1)** as the **Azure resource authentication type**, then proceed by clicking **Next (2)**.
 
-   ![keyword]((images/t2s6.png)
+   ![keyword](images/t2s6.png)
 
 1. On the **Review and finish** page, verify the configuration details, then click **Save and close** to complete the data source setup.
 
-   ![Save and close]((images/t2s7.png)
+   ![Save and close](images/t2s7.png)
 
 ## Task 3: Interact with Azure OpenAI ChatGPT LLM using your own data
 
@@ -120,11 +120,11 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
     Your name is Alice. You are an AI assistant that helps people find information about Porsche cars. Your responses should not contain any harmful information 
     ```
 
-      ![assistant-setup-system-message]((images/t3s3a.png)
+      ![assistant-setup-system-message](images/t3s3a.png)
 
 1. On **Update system message?** pop-up, click on **Continue**.
 
-   ![Alt text]((images/t3s4.png)
+   ![Alt text](images/t3s4.png)
 
 1. Under the **Chat Session** pane, begin testing your prompts by entering queries as shown below:
 
@@ -136,7 +136,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
 
 1. In the **Setup** pane, scroll down to **Parameters** and expand it, experiment with different settings to observe how they affect the model's behavior.
 
-    ![Alt text]((images/t3s6.png)
+    ![Alt text](images/t3s6.png)
 
 1. In the **Chat playground**, click on **Deploy (1)** in the top menu bar and select **…as a web app (2)** from the drop-down menu.
 
@@ -151,7 +151,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
    - Pricing Plan: Choose **Standard (S1) (5)**
    - Check the box for **Enable chat history in the web app** **(6)**
 
-     ![]((images/automate-image9.png)
+     ![](images/automate-image9.png)
 
      > **Note:** Wait for 10 minutes for the webapp to be deployed successfully.
 
@@ -199,7 +199,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
      
 1. Interact with the chatbot by entering queries related to the documents you previously uploaded to verify its functionality.
 
-    ![Create an indexer]((images/t3s12.png)
+    ![Create an indexer](images/t3s12.png)
 
 1. In the Azure Portal, search for **Azure Cosmos DB (1)** and select **Azure Cosmos DB (2)** from the **Services**.
 
@@ -211,7 +211,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
 
 1. In the **db-webapp-<inject key="Deployment ID" enableCopy="false"/>** instance, navigate to **Data Explorer (1)** within your Azure Cosmos DB account. Expand the **conversations (2)** container and selects **items (3)**. Confirm that the **conversation data (5)** from the web app is successfully recorded by reviewing the displayed **documents (4)**.
 
-    ![Create an indexer]((images/t3s15.png)
+    ![Create an indexer](images/t3s15.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
