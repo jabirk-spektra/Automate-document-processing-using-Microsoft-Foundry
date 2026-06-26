@@ -38,11 +38,11 @@ In this task, you will set up the Document Intelligence environment in Azure so 
 
    >**Note:** If prompted, sign in using the same credentials you used to log in to Azure.
 
-1. Select **Start with Document Intelligence**.
+1. Select **Get Started with Document Intelligence**.
 
    ![Alt text](images/automate-image3.png)
 
-1. On the **Document Intelligence Studio** page, scroll to **Custom models** and click **Get started** under **Custom extraction model**. 
+1. On the **Document Intelligence Studio** page, scroll to **Custom models (1)** and click **Get started (2)** under **Custom extraction model**. 
 
    ![Alt text](images/L1T1S5.png)
 
@@ -189,9 +189,9 @@ In this task, you will be using Azure Functions to process documents that are up
 
    ![select-models](images/t3s3.png)
 
-1. On the **Do you trust the authors of the files in this folder?** tab, select **Yes, I trust the authors**.
+1. If **You trust this folder** tab appears, select **In a trusted folder**, and click **Add Folder**.
 
-   ![select-models](images/t3s4.png)
+   ![select-models](images/trust.png)
 
 1. Select the **Azure symbol (1)** from the left pane, and click on **function-app icon (2)** and click **Create Function... (3)**
 
@@ -406,7 +406,7 @@ In this task, you will be using Azure Functions to process documents that are up
          blob_client.upload_blob(data, overwrite=True)
       ```
 
-      ![select-models](images/t3s15.png)
+      ![select-models](images/change_1.png)
 
 1. Please verify to ensure that the final code matches as below.
 
@@ -620,7 +620,7 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
       - Subscription: Select the **Default subscription (1)**.
       - Storage account: storage <inject key="Deployment ID" enableCopy="false"/> **(2)** 
       - Blob container: **output (3)**
-      - Blob storage: **input (4)**
+      - Blob folder: **input (4)**
       - Parsing Mode: **JSON (5)**
 
         ![](images/L1T5S6.png)

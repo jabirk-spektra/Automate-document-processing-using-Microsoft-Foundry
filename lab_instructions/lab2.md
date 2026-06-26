@@ -76,7 +76,7 @@ In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne
       
     - Click on **Next (3)**
 
-      ![data-management]((images/t2s2.png)
+      ![data-management](images/t2s2.png)
       
 1. On the **Upload files** tab, click **Browse for a file (1)**. Navigate to the path `C:\LabFiles\Data\Lab 2` **(2)** and press **Enter**. Select all the **PDF files (3)** in this folder, then click **Open (4)** to upload them. 
 
@@ -102,7 +102,7 @@ In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne
 
 In this task, you will upload custom data to Microsoft Foundry and interact with an Azure OpenAI ChatGPT model. You will customize the system message, test prompt responses, adjust model parameters, and deploy the chatbot as a web app via the Azure portal. The task also includes verifying conversation logging in Azure Cosmos DB and provides steps to troubleshoot deployment issues if needed.
 
-1. In the **Add your data** pane, monitor the status until the data upload is complete and the source details are displayed.
+1. In the **Add your data (1)** pane, monitor the **status (2)** until the data upload is complete and the source details are displayed.
 
    ![upload-data](images/l2t3p1.png)
 
@@ -159,7 +159,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
 
       ![](images/P2T3S9.png)
 
-1. Select the **webapp-<inject key="Deployment ID" enableCopy="false"/> (1)** App Service.
+1. Select the **webapp-<inject key="Deployment ID" enableCopy="false"/>** App Service.
 
       ![](images/P2T3S10.png)
       
@@ -177,7 +177,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
 
       > **Note:** In case of an internal server error or **Chat history is not enabled** error, navigate back to the **Microsoft Foundry portal** and follow the steps below:
 
-      ![Alt text]((images/error.png)
+      ![Alt text](images/error.png)
 
    - In the **Chat (1)** section under Chat playgrounds, click **Deploy (2)** in the top menu bar, then select **...as a web app (3)** from the drop-down menu.
 
