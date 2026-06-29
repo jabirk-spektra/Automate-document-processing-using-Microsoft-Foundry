@@ -24,7 +24,7 @@ You will be able to complete the following tasks:
 
 In this task, you will set up the Document Intelligence environment in Azure so you can build and train a custom document extraction model. It creates a project in Document Intelligence Studio, connects it to the correct Azure resource, and links a storage location for training data. By the end, you have a fully configured project ready for model training.
 
-1. In the Azure portal, enter **Document intelligence (1)** in the top search bar and select **Document intelligences (2)** from the Services list.
+1. In the Azure portal, enter **Document intelligence (1)** in the top search bar and select **Document intelligence (2)** from the Services list.
 
    ![Alt text](images/doc-proc-gt-rt-g2.png)
 
@@ -38,11 +38,11 @@ In this task, you will set up the Document Intelligence environment in Azure so 
 
    >**Note:** If prompted, sign in using the same credentials you used to log in to Azure.
 
-1. Select **Start with Document Intelligence**.
+1. Select **Get Started with Document Intelligence**.
 
    ![Alt text](images/automate-image3.png)
 
-1. On the **Document Intelligence Studio** page, scroll to **Custom models** and click **Get started** under **Custom extraction model**. 
+1. On the **Document Intelligence Studio** page, scroll to **Custom models (1)** and click **Get started (2)** under **Custom extraction model**. 
 
    ![Alt text](images/L1T1S5.png)
 
@@ -189,9 +189,9 @@ In this task, you will be using Azure Functions to process documents that are up
 
    ![select-models](images/t3s3.png)
 
-1. On the **Do you trust the authors of the files in this folder?** tab, select **Yes, I trust the authors**.
+1. If **You trust this folder** tab appears, select **In a trusted folder**, and click **Add Folder**.
 
-   ![select-models](images/t3s4.png)
+   ![select-models](images/trust.png)
 
 1. Select the **Azure symbol (1)** from the left pane, and click on **function-app icon (2)** and click **Create Function... (3)**
 
@@ -406,7 +406,7 @@ In this task, you will be using Azure Functions to process documents that are up
          blob_client.upload_blob(data, overwrite=True)
       ```
 
-      ![select-models](images/t3s15.png)
+      ![select-models](images/change_1.png)
 
 1. Please verify to ensure that the final code matches as below.
 
@@ -522,7 +522,7 @@ In this task, you will run the function in VS Code, which uploads test invoices 
 
 1. Press **Ctrl + F5** to execute the function.
 
-   > **Note:** If a error appears, follow the steps below:
+   > **Note:** If an error appears, follow the steps below:
 
    - Click on **Debug Anyway**
 
@@ -611,7 +611,7 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
       ![](images/L1T5S4.png)
 
-1. After selecting the Azure blob storage , select **Keyword search**
+1. After selecting the Azure blob storage, select **Keyword search**
 
    ![](images/L1T5S5.png)
 
@@ -620,7 +620,7 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
       - Subscription: Select the **Default subscription (1)**.
       - Storage account: storage <inject key="Deployment ID" enableCopy="false"/> **(2)** 
       - Blob container: **output (3)**
-      - Blob storage: **input (4)**
+      - Blob folder: **input (4)**
       - Parsing Mode: **JSON (5)**
 
         ![](images/L1T5S6.png)
@@ -643,9 +643,9 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
    ![](images/L1T5S10ii.png)
       
-1. Click on **Ellipse (3)** and **Configure field (4)** and enable **Retrievable** and **Searchable** options and click save for all fields mentioned in above steps. Take a refrence from given image. For **Address (1)**- **valuestring (2)** - **configure field (4).** After configuring fields for all click on Next.
+1. Click on **Ellipse (3)** and **Configure field (4)** and enable **Retrievable** and **Searchable** options and click save for all fields mentioned in the above steps. Take a reference from the given image. For **Address (1)**- **valuestring (2)** - **configure field (4).** After configuring fields for all, click on Next.
 
-   >**Note:** Configure **Retrievable** and **Searchable** for confidence , bounding regions as well for all fields.
+   >**Note:** Configure **Retrievable** and **Searchable** for confidence, bounding regions, as well as for all fields.
    
    ![](images/L1T5S11i.png)
 
@@ -655,7 +655,7 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
    ![](images/L1T5S12.png)
 
-1. On the **Review and Create** page, enter the Ojects name prefix as azureblob-index (1) and click on Create (2) at the bottom
+1. On the **Review and Create** page, enter the Object's name prefix as azureblob-index (1) and click on Create (2) at the bottom
 
    ![](images/L1T5S13.png)
 

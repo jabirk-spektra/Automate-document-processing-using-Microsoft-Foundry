@@ -76,7 +76,7 @@ In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne
       
     - Click on **Next (3)**
 
-      ![data-management]((images/t2s2.png)
+      ![data-management](images/t2s2.png)
       
 1. On the **Upload files** tab, click **Browse for a file (1)**. Navigate to the path `C:\LabFiles\Data\Lab 2` **(2)** and press **Enter**. Select all the **PDF files (3)** in this folder, then click **Open (4)** to upload them. 
 
@@ -102,7 +102,7 @@ In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne
 
 In this task, you will upload custom data to Microsoft Foundry and interact with an Azure OpenAI ChatGPT model. You will customize the system message, test prompt responses, adjust model parameters, and deploy the chatbot as a web app via the Azure portal. The task also includes verifying conversation logging in Azure Cosmos DB and provides steps to troubleshoot deployment issues if needed.
 
-1. In the **Add your data** pane, monitor the status until the data upload is complete and the source details are displayed.
+1. In the **Add your data (1)** pane, monitor the **status (2)** until the data upload is complete and the source details are displayed.
 
    ![upload-data](images/l2t3p1.png)
 
@@ -134,7 +134,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
    
    ![chat-session-two](images/P2T3S5.png)
 
-1. In the **Setup** pane, scroll down to **Parameters** and expand it, experiment with different settings to observe how they affect the model's behavior.
+1. In the **Setup** pane, scroll down to **Parameters** and expand it. Experiment with different settings to observe how they affect the model's behavior.
 
     ![Alt text](images/t3s6.png)
 
@@ -159,7 +159,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
 
       ![](images/P2T3S9.png)
 
-1. Select the **webapp-<inject key="Deployment ID" enableCopy="false"/> (1)** App Service.
+1. Select the **webapp-<inject key="Deployment ID" enableCopy="false"/>** App Service.
 
       ![](images/P2T3S10.png)
       
@@ -177,7 +177,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
 
       > **Note:** In case of an internal server error or **Chat history is not enabled** error, navigate back to the **Microsoft Foundry portal** and follow the steps below:
 
-      ![Alt text]((images/error.png)
+      ![Alt text](images/error.png)
 
    - In the **Chat (1)** section under Chat playgrounds, click **Deploy (2)** in the top menu bar, then select **...as a web app (3)** from the drop-down menu.
 
@@ -209,7 +209,7 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
    
    ![Create an indexer](images/100725(26)%20-%20Copy.png)
 
-1. In the **db-webapp-<inject key="Deployment ID" enableCopy="false"/>** instance, navigate to **Data Explorer (1)** within your Azure Cosmos DB account. Expand the **conversations (2)** container and selects **items (3)**. Confirm that the **conversation data (5)** from the web app is successfully recorded by reviewing the displayed **documents (4)**.
+1. In the **db-webapp-<inject key="Deployment ID" enableCopy="false"/>** instance, navigate to **Data Explorer (1)** within your Azure Cosmos DB account. Expand the **conversations (2)** container and select **items (3)**. Confirm that the **conversation data (5)** from the web app is successfully recorded by reviewing the displayed **documents (4)**.
 
     ![Create an indexer](images/t3s15.png)
 
@@ -228,4 +228,4 @@ In this lab, you accessed the Azure OpenAI Playground, uploaded your own dataset
 
 ### Conclusion
 
-By completing this lab, you gained hands-on experience with Azure Microsoft Foundry to extend ChatGPT with your own data. You configured the system to respond to domain-specific queries, deployed the model as a web application, and validated that all interactions were successfully logged in Cosmos DB. This exercise demonstrated how to build, deploy, and monitor a customized AI-powered solution end-to-end.
+By completing this lab, you gained hands-on experience with the Microsoft Azure Foundry to extend ChatGPT with your own data. You configured the system to respond to domain-specific queries, deployed the model as a web application, and validated that all interactions were successfully logged in Cosmos DB. This exercise demonstrated how to build, deploy, and monitor a customized AI-powered solution end-to-end.
