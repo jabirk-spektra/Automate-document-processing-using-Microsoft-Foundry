@@ -512,6 +512,8 @@ In this task, you will be using Azure Functions to process documents that are up
 
       ![select-models](images/t3s17.png)
 
+<validation step="3cdf751e-c41a-4153-8198-4eb48d2386ec" />
+
 ## Task 4: Run the Function App
 
 In this task, you will run the function in VS Code, which uploads test invoices to the input container of the Azure Storage account to trigger the function. Afterwards, verify the output JSON files in the output container to confirm successful document analysis.
@@ -589,7 +591,7 @@ In this task, you will run the function in VS Code, which uploads test invoices 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-<validation step="3cdf751e-c41a-4153-8198-4eb48d2386ec" />
+<validation step="e6ed8fd1-9636-4dee-b152-c82af60ce717" />
 
 ## Task 5: Working with AI Search
 
@@ -681,8 +683,6 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-<validation step="e6ed8fd1-9636-4dee-b152-c82af60ce717" />
 
 ## Summary
 
