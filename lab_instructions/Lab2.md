@@ -22,89 +22,49 @@ You will be able to complete the following tasks:
 
 In this task, you will open the Azure OpenAI resource in the Azure portal. It navigates to the Microsoft Foundry portal from the resource page. If the direct option is missing, it provides an alternate navigation method to reach Microsoft Foundry.
 
-1. In the Azure portal, search for **OpenAI (1)** in the search bar and select **Azure OpenAI (2)** from Services.
+1. In the Azure portal, search for **Foundry (1)** in the search bar and select **Microsoft Foundry (2)** from Services.
 
-   ![OpenAI](images2/2/t1s1.png)
+   ![OpenAI](./../images/t1s10n.png)
 
-1. In the **Microsoft Foundry | Azure OpenAI** tab, select **OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+1. In the **Microsoft Foundry | Foundry** tab, click **Foundry (1)**, and select **OpenAI-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-   ![OpenAI](images/au6.png)
+   ![OpenAI](./../images/au6-n.png)
 
-1. On the **Azure OpenAI** page, click **Go to Foundry portal** to proceed to the Microsoft Foundry interface
+1. On the **Microsoft Foundry** page, click **Go to Foundry portal** to proceed to the Microsoft Foundry interface
 
-   ![OpenAI Studio](images/au7.png)
+   ![OpenAI Studio](./../images/au7-n.png)
 
 ## Task 2: Upload your own data
 
 In this task, you will upload Porsche's owner manuals (Taycan, Panamera, Cayenne) to Azure OpenAI Studio for use in a custom chat model.
 
-1. Click on **Chat (1)** under the Playgrounds section, then in the **Setup** tab of the Chat playground, expand **Add your data (2)** and click **+ Add a data source (3)** to connect your own data.
+1. Once you launch the **Foundry Portal**, click **Build**.
 
-   ![Azure OpenAI Studio](images/au8.png)
-   
-1. Fill in the required fields on the **Select or add data source** page as follows:
-    
-    - Select data source: **Upload files (preview)** **(1)**.
+   ![Azure OpenAI Studio](./../images/msf-1.png)
 
-    - Subscription: Select your **Default Subscription (2)** from the drop-down.
+1. Select **Deployments**, and click on the **Model**. 
 
-    - Select Azure Blob storage resource: Choose the already created storage account **storage<inject key="Deployment ID">** **(3)**. 
-      
-    - Click on **Turn on CORS (4)** when prompted.
+   ![Azure OpenAI Studio](./../images/msf-2.png)
 
-         ![](images2/2/t2s2a.png)
+1. Click **Upload files**.
 
-      > **Note:** If you encounter any issues while enabling CORS, please follow the steps below :
+   ![Azure OpenAI Studio](./../images/msf-3.png)
 
-         - Navigate to the Azure portal.
-         - Search for storage account in the search bar and select **storage<inject key="Deployment ID" enableCopy="false"/>**.
-         - In the left pane, search for **CORS (1)** and select **Resource sharing (CORS) (2)**.
+1. For the **Index option**, select **Create a new index (1)**. In the Vector index name field, enter **aoaiworkshop (2)**, and then click **browse for files (3).**
 
-            ![Azure OpenAI Studio](images/120.png)
-          
-         - In the first row, ensure only **GET**, **POST**, **OPTIONS**, **PUT** **(1)** is enabled under allowed methods, provide it as **content-length** **(2)** under exposed headers and set the Max age to **120** **(3)**.
-         - In the second row, set the Allowed origins to `*` **(4)**, enable **GET**, **POST**, **OPTIONS**, **PUT** **(5)** under allowed methods, set the Allowed headers and Exposed headers to `*` **(6)** and `*` **(7)** respectively and the Max age to **200 (8)**.
-         - Click on **Save**.
-          
-           ![Azure OpenAI Studio](images/save.png)
+   ![Azure OpenAI Studio](./../images/msf-4.png)
 
-         - Navigate back to the Azure Microsoft Foundry portal, close the window, and re-perform steps 1 and 2.
-            
-    - Select Azure AI Search resource: Select **search-<inject key="Deployment ID">** **(1)** from the drop down.
+1. Navigate to the path `C:\LabFiles\Data\Lab 2` **(1)** and press Enter. Select **all the PDF files (2)** in this folder, then click **Open (3)** to upload them.
 
-    - Enter the index name: **aoaiworkshop** **(2)**
-      
-    - Click on **Next (3)**
+   ![Azure OpenAI Studio](./../images/msf-5.png)
 
-      ![data-management](images2/2/t2s2.png)
-      
-1. On the **Upload files** tab, click **Browse for a file (1)**. Navigate to the path `C:\LabFiles\Data\Lab 2` **(2)** and press **Enter**. Select all the **PDF files (3)** in this folder, then click **Open (4)** to upload them. 
+1. Click **Attach**.
 
-   ![data-management](images/l2t2p3.png)
-
-1. Click on **Upload files** **(1)**, and then click **Next** **(2)**.
-
-   ![data-management](images2/2/t2s4a.png)
-
-1. On the **Data Management** page, from the drop-down select **Keyword (1)** as the Search type and click **Next (2)**.
-
-   ![keyword](images/uploadfiles1.png)
-
-1. On the **Data Connection** step, choose **API Key (1)** as the **Azure resource authentication type**, then proceed by clicking **Next (2)**.
-
-   ![keyword](images2/2/t2s6.png)
-
-1. On the **Review and finish** page, verify the configuration details, then click **Save and close** to complete the data source setup.
-
-   ![Save and close](images2/2/t2s7.png)
+   ![Azure OpenAI Studio](./../images/msf-6.png)
 
 ## Task 3: Interact with Azure OpenAI ChatGPT LLM using your own data
 
 In this task, you will upload custom data to Microsoft Foundry and interact with an Azure OpenAI ChatGPT model. You will customize the system message, test prompt responses, adjust model parameters, and deploy the chatbot as a web app via the Azure portal. The task also includes verifying conversation logging in Azure Cosmos DB and provides steps to troubleshoot deployment issues if needed.
-
-1. In the **Add your data** pane, monitor the status until the data upload is complete and the source details are displayed.
-
-   ![upload-data](images/l2t3p1.png)
 
 1. Under the **Chat Session** pane, begin testing your prompts by entering queries as shown below:
 
@@ -112,19 +72,15 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
     How to operate Android Auto in the Porsche Taycan? give step-by-step instructions
     ```
 
-      ![chat-session-one](images/l2t3p2.png)
+      ![chat-session-one](./../images/msf-7.png)
 
-1. Customize your bot's responses by updating the **message (1)** under **Give the model instructions and context**, then click **Apply changes (2)**.
+1. Customize your bot's responses by updating the **Instructions**.
 
     ```
     Your name is Alice. You are an AI assistant that helps people find information about Porsche cars. Your responses should not contain any harmful information 
     ```
 
-      ![assistant-setup-system-message](images2/2/t3s3a.png)
-
-1. On **Update system message?** pop-up, click on **Continue**.
-
-   ![Alt text](images2/2/t3s4.png)
+      ![assistant-setup-system-message](./../images/msf-8.png)
 
 1. Under the **Chat Session** pane, begin testing your prompts by entering queries as shown below:
 
@@ -132,12 +88,102 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
     What is your name?
     ```
    
-   ![chat-session-two](images/P2T3S5.png)
+   ![chat-session-two](./../images/msf-9.png)
 
-1. In the **Setup** pane, scroll down to **Parameters** and expand it, experiment with different settings to observe how they affect the model's behavior.
+1. In the **Playground** pane, click on the **Parameters** and expand it, experiment with different settings to observe how they affect the model's behavior.
 
-    ![Alt text](images2/2/t3s6.png)
+    ![Alt text](./../images/msf-10.png)
 
+1. In Visual Studio Code, navigate to the **File (1)** from the top menu bar and select **Open Folder... (2)**.
+
+   ![select-models](images2/t3s2.png)
+
+1. Now, navigate to `C:/Labfiles` **(1)** and select **porsche-assistant (2)** folder and then click on **Select Folder (3)**.
+
+   ![select-models](./../images/vsc-1.png)
+
+1. After uploading the folder, the files contained within it will be displayed.
+
+   ![select-models](./../images/vsc-2.png)
+
+1. From the top navigation bar, click **Manage**.
+
+   ![select-models](images2/visual-1.png)
+
+1. Then, in the **You are in Restricted Mode** pop-up, click Trust.
+
+   ![select-models](images2/visual-2.png)
+
+1. Navigate back to **Azure Portal**, and go to your Foundry resource **OpenAI-<inject key="Deployment ID" enableCopy="false"/>** to get the required values needed for the script.
+
+   - Navigate to your **Foundry** resource
+
+     ![select-models](./../images/msf-12.png)
+
+   - Under **Resource Management (1)**, click **Keys and Endpoint (2)**, and copy the **Key 1 (3)**, and the **API endpoint (4)**, and save it in a **Notepad**.
+
+     ![select-models](./../images/vsc-3.png)
+
+   - Now, go to **Overview** and click **Go to Foundry portal**.
+
+     ![OpenAI](./../images/au7-n.png)
+
+   - In the **Foundry portal**, copy the **API key (1)**, **Azure OpenAI endpoint (2)**, and scroll down to copy the **model name (3)**, and save it in a **Notepad.**
+
+     ![select-models](./../images/vsc-4.png) 
+
+1. In the **Microsoft Foundry | AI Search** page, click **AI Search (1)**, and select **search-<inject key="Deployment ID" enableCopy="false"/> (2)**.
+
+   ![](./../images/vsc-5.png)
+
+1. In the **Overview (1)** page, copy the **URL (2)**, and save it in a **Notepad**.
+
+   ![](./../images/vsc-6.png)
+
+1. Scroll down, and under **Security + networking**, click **Keys (1)**, copy the **Key (2)**, and save it in a **Notepad**.
+
+   ![](./../images/vsc-7.png)
+
+1. Navigate back to **Visual Studio Code** and launch a new terminal.
+
+1. Click the **ellipsis (⋯) (1)** from the top menu bar, go to **Terminal (2)**, and select **New Terminal (3)**.
+
+      ![select-models](images2/t3s8.png)
+
+1. In the new terminal, copy the command below to login to Azure.
+
+   ```
+   az login
+   ```
+
+   ![select-models](./../images/vsc-8.png)
+
+   >**Note**: Minimize all the applications to **Sign in**.
+
+1. Select **Work or school account (1)**, and click **Continue (2)**.
+
+   ![select-models](./../images/vsc-9.png)
+
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username, and click on **Next (2)**. 
+
+   * **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+      ![OpenAI](images2/signin.png)
+     
+1. Now enter the following password and click on **Sign in (2)**.
+   
+   * **Enter Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
+   
+      ![OpenAI](images2/TAP.png)
+
+1. On the **Sign in to all apps and websites on this device?**, click **No, this app only**.
+
+      ![OpenAI](./../images/vsc-10.png)
+
+1. In the Visual Studio code page, press **Enter** to select default subscription.
+
+      ![OpenAI](./../images/vsc-11.png)
+     
 1. In the **Chat playground**, click on **Deploy (1)** in the top menu bar and select **…as a web app (2)** from the drop-down menu.
 
    ![](images/P2T3S7.png)
@@ -193,25 +239,25 @@ In this task, you will upload custom data to Microsoft Foundry and interact with
      
    - Click on **Browse** from the overview tab again.
 
-      ![](images/app-service-1.png)
+      ![](./../images/app-service-1-n.png)
 
      >**Note:** If the internal server issue continues, restart the web app and then try accessing it. Please note that it may take some time to become available.
      
 1. Interact with the chatbot by entering queries related to the documents you previously uploaded to verify its functionality.
 
-    ![Create an indexer](images2/2/t3s12.png)
+    ![Create an indexer](./../images/t3s12-n.png)
 
 1. In the Azure Portal, search for **Azure Cosmos DB (1)** and select **Azure Cosmos DB (2)** from the **Services**.
 
     ![Create an indexer](images/l2t3p13.png)
 
-1. Verify **db-webapp-<inject key="Deployment ID" enableCopy="false"/>** has been created, then **select** it.
+1. Verify **cosmos-porsche-<inject key="Deployment ID" enableCopy="false"/>** has been created, then **select** it.
    
-   ![Create an indexer](images/100725(26)%20-%20Copy.png)
+   ![Create an indexer](./../images/msf-11.png)
 
-1. In the **db-webapp-<inject key="Deployment ID" enableCopy="false"/>** instance, navigate to **Data Explorer (1)** within your Azure Cosmos DB account. Expand the **conversations (2)** container and selects **items (3)**. Confirm that the **conversation data (5)** from the web app is successfully recorded by reviewing the displayed **documents (4)**.
+1. In the **cosmos-porsche-<inject key="Deployment ID" enableCopy="false"/>** instance, navigate to **Data Explorer (1)** within your Azure Cosmos DB account. Expand the **conversations (2)** container and selects **items (3)**. Confirm that the **conversation data (5)** from the web app is successfully recorded by reviewing the displayed **documents (4)**.
 
-    ![Create an indexer](images2/2/t3s15.png)
+    ![Create an indexer](./../images/t3s15-n.png)
 
 >**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 

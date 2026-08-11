@@ -58,7 +58,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![OpenAI](images2/gs.png)
+  ![OpenAI](images2/gs-n.png)
  
 ## Utilizing the Split Window Feature
  
@@ -77,6 +77,13 @@ Feel free to **Start, Restart,** or **Stop** your virtual machine as needed from
 To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
   ![OpenAI](images2/zoom2.png)
+
+## Resize the Virtual Machine View
+
+Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+
+![OpenAI](images2/zoomin.png)
+
 
 ## Lab Validation
 

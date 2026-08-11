@@ -38,9 +38,9 @@ In this task, you will set up the Document Intelligence environment in Azure so 
 
    >**Note:** If prompted, sign in using the same credentials you used to log in to Azure.
 
-1. Select **Start with Document Intelligence**.
+1. Select **Get started with Document Intelligence**.
 
-   ![Alt text](images2/automate-image3.png)
+   ![Alt text](images2/automate-image3-n.png)
 
 1. On the **Document Intelligence Studio** page, scroll to **Custom models** and click **Get started** under **Custom extraction model**. 
 
@@ -167,7 +167,7 @@ In this task, you will upload and label training documents to create a custom mo
 
       ![select-models](images/stu6upd.png)
 
-1. Once uploaded, select a test document **(1)** and click **Run analysis(2)**. On the right-hand side, you will see the detected fields **Organization** and **Address** along with their confidence scores.
+1. Once uploaded, select a test document **(1)** and click **Run analysis (2)**. On the right-hand side, you will see the detected fields **Organization** and **Address** along with their confidence scores.
 
    ![Name](images/L1T2S15.png)
    
@@ -189,9 +189,13 @@ In this task, you will be using Azure Functions to process documents that are up
 
    ![select-models](images2/t3s3.png)
 
-1. On the **Do you trust the authors of the files in this folder?** tab, select **Yes, I trust the authors**.
+1. From the top navigation bar, click **Manage**.
 
-   ![select-models](images2/t3s4.png)
+   ![select-models](images2/visual-1.png)
+
+1. Then, in the **You are in Restricted Mode** pop-up, click Trust.
+
+   ![select-models](images2/visual-2.png)
 
 1. Select the **Azure symbol (1)** from the left pane, and click on **function-app icon (2)** and click **Create Function... (3)**
 
@@ -597,7 +601,7 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
 1. In the Azure portal, enter **AI Search (1)** in the top search bar and select **AI Search (2)** from the Services list.
 
-      ![train-module](images/P1T5S2.png)
+      ![train-module](../images/P1T5S2-n.png)
    
 1. In **Microsoft foundry | AI Search** tab, select **search-<inject key="Deployment ID" enableCopy="false"/>**.
 
@@ -607,7 +611,7 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
       ![train-module](images/P1T5S3.png)
 
-1. From **Choose a data source(1)** , select **Azure Blob Storage(2)** 
+1. From **Choose a data source (1)** , select **Azure Blob Storage (2)** 
 
       ![](images/L1T5S4.png)
 
@@ -615,12 +619,12 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
    ![](images/L1T5S5.png)
 
-1. Provide the following values and click on **Next(6)**
+1. Provide the following values and click on **Next (6)**
    
       - Subscription: Select the **Default subscription (1)**.
       - Storage account: storage <inject key="Deployment ID" enableCopy="false"/> **(2)** 
       - Blob container: **output (3)**
-      - Blob storage: **input (4)**
+      - Blob folder: **input (4)**
       - Parsing Mode: **JSON (5)**
 
         ![](images2/L1T5S6.png)
@@ -635,8 +639,7 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
 1. Ensure that all fields are marked as **Retrievable (1)** and **Searchable (2)** and click on **Save (3).**
 
-      ![](images2/L1T5S8.png)
-
+      ![](images2/L1T5S9.png)
 
 1. On the **Preview Mappings** page, expand **analyzeResult (1)** > **documents (2)** > **fields (3)**, then expand **Address (4)** and check the configure fields for **type, valueString, and content (5)**; do the same for **Organization (5)** fields **type, valueString, and content (7)** .
 
@@ -644,19 +647,19 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
 
    ![](images2/L1T5S10ii.png)
       
-1. Click on **Ellipse (3)** and **Configure field (4)** and enable **Retrievable** and **Searchable** options and click save for all fields mentioned in above steps. Take a refrence from given image. For **Address (1)**- **valuestring (2)** - **configure field (4).** After configuring fields for all click on Next.
+1. Click on **Ellipse (3)** and **Configure field (4)** and enable **Retrievable** and **Searchable** options and click save for all fields mentioned in above steps. Take a reference from given image. For **Address (1)**- **valuestring (2)** - **configure field (4).** After configuring fields for all click on Next.
 
    >**Note:** Configure **Retrievable** and **Searchable** for confidence , bounding regions as well for all fields.
    
    ![](images/L1T5S11i.png)
 
-   ![](images/L1T5S11ii.png)
+   ![](../images/L1T5S11ii-n.png)
 
 1. Keep **Advanced settings** to default and click on next.
 
-   ![](images/L1T5S12.png)
+   ![](../images/L1T5S12-n.png)
 
-1. On the **Review and Create** page, enter the Ojects name prefix as azureblob-index (1) and click on Create (2) at the bottom
+1. On the **Review and Create** page, enter the Objects name prefix as **azureblob-index (1)** and click on Create (2) at the bottom
 
    ![](images/L1T5S13.png)
 
