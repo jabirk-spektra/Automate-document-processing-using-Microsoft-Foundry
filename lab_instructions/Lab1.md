@@ -2,6 +2,12 @@
 
 ### Estimated Duration: 120 Minutes
 
+## Scenario
+
+Contoso processes a large volume of invoices in PDF format and wants to reduce the manual effort involved in extracting key information from these documents. The company needs an automated solution that can identify important invoice details, such as the Organization and Address, and make the extracted information available for further analysis and search.
+
+You will create a custom extraction model by uploading and labeling sample invoices, train the model using the template-based approach, and test it against new documents to verify the extracted information.
+
 ## Overview
 
 In this lab, you will explore how Azure simplifies document processing by automating data extraction and analysis. Using Azure AI Document Intelligence, you'll train models to extract information from documents such as PDFs, images, and forms. You'll also integrate Azure Function Apps to enable scalable, programmatic processing of documents.
@@ -680,6 +686,10 @@ In this task, you will connect Azure AI Search to Blob Storage to index analyzed
       ![Create an indexer](images2/t5s12.png)
 
       ![Create an indexer](images2/t5s12a.png)
+
+1. In the **Fields (1)** tab, make sure the **content** Retrievable string is **checked (2)**, and click **Save**.
+
+   ![Create an indexer](./../images/vsc-30.png)
 
 ## Summary
 
