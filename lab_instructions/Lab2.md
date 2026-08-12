@@ -270,7 +270,6 @@ In this task, you will upload your custom data to Microsoft Foundry and interact
 
 1. On the left-hand side, select **Azure (1)** if prompted to sign in to Azure, and then click **Sign in to Azure... (2)**.
 
-
    ![OpenAI](./../images/vsc-22.png)
 
 1. In the pop-up, click **Allow**.
