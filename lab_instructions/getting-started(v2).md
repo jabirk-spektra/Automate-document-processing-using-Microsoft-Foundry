@@ -1,4 +1,4 @@
-# Automate document processing by using Azure AI & OpenAI
+# Automate Document Processing using Microsoft Foundry
 
 ### Overall Estimated Duration: 4 Hours
 
@@ -50,13 +50,13 @@ The architecture for this lab involves the following key components:
 
 ## Getting Started with the Lab
 
-Welcome to your Automate Document Processing using Azure AI Document Intelligence and Azure OpenAI We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
+Welcome to your Automate Document Processing using Microsoft Foundry workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
  
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser.
 
-  ![OpenAI](images2/GS-0.png)
+  ![OpenAI](./../images/GS-0-n.png)
  
 ## Virtual Machine & Lab Guide
 
@@ -92,13 +92,6 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 
 ![OpenAI](images2/zoomin.png)
 
-
-## Lab Validation
-
-After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task; if not, carefully read the error message and retry the step, following the instructions in the lab guide.
-
-   ![Inline Validation](images2/valid.png)
-
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the **Azure Portal** icon as shown below:
@@ -116,12 +109,6 @@ After completing the task, hit the **Validate** button under the Validation tab 
    * **Enter Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
    
       ![OpenAI](images2/TAP.png)
-
-1. If you see the pop-up **Action Required**, keep default and then click on **Ask later**. If you see the pop-up Help us protect your account, click on **Skip for now** (14 days until this is required), and then click on **Next**.
-
-   ![Asklater](images/asklater.png)
-
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
      
 1. If prompted to **Stay signed in?**, click **"No"**.
  

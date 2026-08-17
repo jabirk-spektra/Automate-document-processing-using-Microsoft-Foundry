@@ -38,7 +38,7 @@ In this task, you will set up the Document Intelligence environment in Azure so 
 
    ![Alt text](images2/automate-image1.png)
 
-1. In the **Overview (1)** pane, scroll down to the **Get Started** section and click **Go to Document Intelligence Studio (2)**.
+1. In the **Overview** pane, scroll down to the **Get Started** section and click **Go to Document Intelligence Studio**.
 
    ![Alt text](images2/automate-image2.png)
 
@@ -153,7 +153,7 @@ In this task, you will upload and label training documents to create a custom mo
 
      ![Train](images/doc17.png)
 
-1. In the **Train a new model** window, enter **model (1)** as Model ID, **custom model (2)** as Model Description (2), choose **Template (3)** as Build Mode, and click **Train (4)**.
+1. In the **Train a new model** window, enter **model (1)** as Model ID, **custom model (2)** as Model Description, choose **Template (3)** as Build Mode, and click **Train (4)**.
 
      ![Name](images2/t2s9.png)
 
