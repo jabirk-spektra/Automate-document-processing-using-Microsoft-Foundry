@@ -38,7 +38,7 @@ In this task, you will open the Microsoft Foundry resource in the Azure portal. 
 
    ![OpenAI](./../images/au6-n.png)
 
-1. On the **Microsoft Foundry** page, click **Go to Foundry portal** to proceed to the Microsoft Foundry interface
+1. On the **Microsoft Foundry** page, click **Go to Foundry portal** to proceed to the Microsoft Foundry interface.
 
    ![OpenAI Studio](./../images/au7-n.png)
 
@@ -192,10 +192,9 @@ In this task, you will upload your custom data to Microsoft Foundry and interact
 
    - Replace the existing values with the values provided below, which you copied into Notepad. Update the corresponding values in the script before running it in **Visual Studio Code.**
    - **PASTE-RG-NAME** = OpenAI-<inject key="Deployment ID" enableCopy="false"/>
-   - **deploymentid** = <inject key="Deployment ID" enableCopy="false"/>
 
    ```
-   az deployment group create --resource-group PASTE-RG-NAME --template-file infra/main.json --parameters deploymentId=jab01 appServiceSku=S1 azureOpenAiEndpoint=PASTE-FOUNDRY-ENDPOINT azureOpenAiApiKey=PASTE-FOUNDRY-KEY modelDeploymentName=completionModel searchEndpoint=PASTE-SEARCH-ENDPOINT searchApiKey=PASTE-SEARCH-KEY searchIndexName=azureblob-index
+   az deployment group create --resource-group PASTE-RG-NAME --template-file infra/main.json --parameters deploymentId=<inject key="Deployment ID" enableCopy="false"/> appServiceSku=S1 azureOpenAiEndpoint=PASTE-FOUNDRY-ENDPOINT azureOpenAiApiKey=PASTE-FOUNDRY-KEY modelDeploymentName=completionModel searchEndpoint=PASTE-SEARCH-ENDPOINT searchApiKey=PASTE-SEARCH-KEY searchIndexName=azureblob-index
    ```
 
    ![OpenAI](./../images/vsc-12.png)
@@ -352,7 +351,7 @@ In this task, you will upload your custom data to Microsoft Foundry and interact
    
    ![Create an indexer](./../images/msf-11.png)
 
-1. In the **cosmos-porsche-<inject key="Deployment ID" enableCopy="false"/>** instance, navigate to **Data Explorer (1)** within your Azure Cosmos DB account. Expand the **conversations (2)** container and selects **items (3)**. Confirm that the **conversation data (5)** from the web app is successfully recorded by reviewing the displayed **documents (4)**.
+1. In the **cosmos-porsche-<inject key="Deployment ID" enableCopy="false"/>** instance, navigate to **Data Explorer (1)** within your Azure Cosmos DB account. Expand the **conversations (2)** container and select **items (3)**. Confirm that the **conversation data (5)** from the web app is successfully recorded by reviewing the displayed **documents (4)**.
 
     ![Create an indexer](./../images/t3s15-n.png)
    

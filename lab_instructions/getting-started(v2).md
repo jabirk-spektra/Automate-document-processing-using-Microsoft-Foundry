@@ -1,4 +1,4 @@
-# Automate document processing by using Azure AI & OpenAI
+# Automate Document Processing using Microsoft Foundry
 
 ### Overall Estimated Duration: 4 Hours
 
@@ -50,13 +50,13 @@ The architecture for this lab involves the following key components:
 
 ## Getting Started with the Lab
 
-Welcome to your Automate Document Processing using Azure AI Document Intelligence and Azure OpenAI We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
+Welcome to your Automate Document Processing using Microsoft Foundry workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
  
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser.
 
-  ![OpenAI](images2/GS-0.png)
+  ![OpenAI](./../images/GS-0-n.png)
  
 ## Virtual Machine & Lab Guide
 
