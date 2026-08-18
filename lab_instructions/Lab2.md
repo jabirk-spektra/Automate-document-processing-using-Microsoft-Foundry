@@ -124,7 +124,6 @@ In this task, you will interact with the Foundry chat model using the data you u
 
 1. Navigate back to the **Azure Portal**, and go to your Foundry resource **OpenAI-<inject key="Deployment ID" enableCopy="false"/>** to collect the connection values the application needs. You will copy each value into Notepad and use them in the upcoming deployment and configuration steps.
 
-
    - Navigate to your **Foundry** resource
 
      ![select-models](./../images/msf-12.png)
@@ -136,7 +135,7 @@ In this task, you will interact with the Foundry chat model using the data you u
    - To copy the endpoint, click **OpenAI (1)** and copy the **Endpoint (2)**, then save them in a Notepad file.
 
      ![select-models](./../images/vsc-3-n.png)
-
+   
 1. Next, collect the search service details. In the **Microsoft Foundry | AI Search** page, click **AI Search (1)**, and select **search-<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
    ![](./../images/vsc-5.png)
@@ -337,7 +336,7 @@ In this task, you will interact with the Foundry chat model using the data you u
 
       > **Note:** If you see a blank screen, wait for some time and refresh the page.
    
-     >**Note:** If the internal server issue continues, restart the web app and then try accessing it. Please note that it may take some time to become available.
+      >**Note:** If the internal server issue continues, restart the web app and then try accessing it. Please note that it may take some time to become available.
      
 1. Interact with the chatbot by entering queries related to the documents you previously uploaded, and verify that it responds with accurate, document-grounded answers:
 
