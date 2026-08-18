@@ -582,7 +582,6 @@ In this task, you will run the function in VS Code, which uploads test invoices 
 
 1. Navigate back to **VS Code** and verify the **logs** in the **Terminal**. You should see log entries confirming that the function was triggered and the analysis succeeded for each uploaded invoice.
 
-
 1. Once the function app is triggered successfully, return to the **storage account** in the Azure portal.
 
    ![select-models](images2/t4s11.png)
