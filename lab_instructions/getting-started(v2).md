@@ -8,11 +8,11 @@ You are part of an AI engineering team at Contoso, a company that provides intel
 
 To address this challenge, Contoso wants to build a custom AI assistant that can answer questions using its trusted documentation rather than relying only on general model knowledge.
 
-In this lab, you will use Microsoft Foundry to upload and index Contoso's documents, configure a chat model to provide grounded responses, and integrate Azure AI Search for information retrieval. You will then deploy the assistant as a web application and use Azure Cosmos DB to store conversation data.
+In this lab, you will use Microsoft Foundry to upload and index Contoso's documents, configure a chat model to provide grounded responses, and integrate Azure AI Search (Foundry IQ) for information retrieval. You will then deploy the assistant as a web application and use Azure Cosmos DB to store conversation data.
 
 ## Overview
 
-In this hands-on lab, you will explore document processing using Azure services to streamline and enhance the management of various document types. The focus will be on leveraging Azure's capabilities for analyzing and extracting data from documents, whether in electronic or printed formats. The lab will cover the end-to-end process, including data extraction, sentiment analysis, language detection, OCR, and document classification. Participants will utilize Azure tools such as the Document Intelligence resource, Azure Functions for blob triggers, and AI Search for document analysis. Additionally, they will integrate their processed data with Microsoft Foundry ChatGPT via a web application and Cosmos DB to assess and interact with the information effectively.
+In this hands-on lab, you will explore document processing using Azure services to streamline and enhance the management of various document types. The focus will be on leveraging Azure's capabilities for analyzing and extracting data from documents, whether in electronic or printed formats. The lab will cover the end-to-end process, including data extraction, sentiment analysis, language detection, OCR, and document classification. Participants will utilize Azure tools such as the Document Intelligence resource, Azure Functions for blob triggers, and AI Search (Foundry IQ) for document analysis. Additionally, they will integrate their processed data with Microsoft Foundry ChatGPT via a web application and Cosmos DB to assess and interact with the information effectively.
 
 ## Objectives
 
@@ -32,11 +32,11 @@ Participants should have basic knowledge and understanding of the following:
   
 ## Architecture
 
-**Azure Document Intelligence** processes and extracts data from documents. **Azure Functions** trigger the document processing based on blob changes. **Azure Storage Account** stores the documents to be processed. **Azure AI Search** indexes and searches the extracted data. **Microsoft Foundry** provides AI capabilities for natural language processing and generation. **Web Application** facilitates user interaction and displays the results of the AI processing. A storage mechanism stores chat history for viewing and analysis.
+**Azure Document Intelligence** processes and extracts data from documents. **Azure Functions** trigger the document processing based on blob changes. **Azure Storage Account** stores the documents to be processed. **Azure AI Search (Foundry IQ)** indexes and searches the extracted data. **Microsoft Foundry** provides AI capabilities for natural language processing and generation. **Web Application** facilitates user interaction and displays the results of the AI processing. A storage mechanism stores chat history for viewing and analysis.
 
 ## Architecture Diagram
 
-![Architecture](./../images/updated-arch-2.png)
+![Architecture](./../images/architecture_updated.png)
 
 ## Explanation of Components
 
@@ -44,7 +44,7 @@ The architecture for this lab involves the following key components:
 
 - **Azure Document Intelligence:** It is a service that uses AI to extract structured data from unstructured documents.
 - **Azure Functions:** It is a serverless compute service that allows you to run code without having to provision or manage infrastructure. You can write code in various languages and trigger it based on events like HTTP requests, timers, or messages from queues or topics.
-- **Azure AI Search:** It is a cloud-based search service that allows you to add search capabilities to your applications. It provides features like autocomplete, faceted search, and spell correction, making it easy for users to find relevant information.
+- **Azure AI Search (Foundry IQ):** It is a cloud-based search service that allows you to add search capabilities to your applications. It provides features like autocomplete, faceted search, and spell correction, making it easy for users to find relevant information.
 - **Microsoft Foundry:** It is a unified platform for building, deploying, and managing AI applications using a range of AI models, including gpt-5 and later models. It enables developers to create intelligent applications that can understand natural language, generate human-like responses, analyze information, and interact with users using enterprise data and AI capabilities.
 - **Azure Web App:** It is a fully managed platform for building, deploying, and scaling web applications. It supports various programming languages and frameworks, and offers features like continuous deployment, scaling, and integration with other Azure services.
 
